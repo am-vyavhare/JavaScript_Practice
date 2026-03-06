@@ -65,3 +65,40 @@ console.log(Object.entries(tinderUser))
 
 //check if object contais this property
 console.log(tinderUser.hasOwnProperty('id'))
+
+const course = {
+    coursename: "JS",
+    price: "123",
+    courseInstructor: "Aniket"
+}
+
+console.log(course.courseInstructor);
+
+const {courseInstructor} = course
+//giving new name while collecting from the object
+const {courseInstructor:insturctor} = course
+
+
+console.log(courseInstructor)
+console.log(insturctor)
+
+//destructuring the objects using {}
+//generally used in frameworks to work with the object properties
+const navbar = ({company}) =>{
+    console.log(`Inside the navbar company name is - ${company}`)
+}
+
+navbar({company:"Google"})
+
+//data in the JSON format
+// {
+//     coursename: "JS",
+//     price: "123",
+//     courseInstructor: "Aniket"
+// }
+
+//data in the array -> object
+[
+    {},
+    {}
+]
