@@ -31,3 +31,34 @@ const myFunction = function(){
 console.log(typeof BigNumber) //bigint
 console.log(typeof heros)   //object
 console.log(typeof myFunction)  //function
+
+
+//*****************************Memory Allocation ************
+
+// Stack (Primitive), Heap(Non-Primitive)
+
+let myName = "Aniket"
+//stored in stack
+let anotherName = myName
+anotherName = "Don"
+
+console.log(myName)
+console.log(anotherName)
+
+//stored in heap
+let user1 = {
+    email : "abc@gmail.com",
+    upi : "amv@ybl"
+}
+
+//now point to the same memory now
+let user2 = user1
+
+user2.email = "xyz@gmail.com"
+
+console.log(user1.email)
+console.log(user2.email)
+//both outputs xyz@gmail.com
+
+
+ 
