@@ -29,3 +29,28 @@ function calculateCartPrice(num1, num2, ...nums){
 }
 
 console.log(calculateCartPrice(100,200,300))
+
+const user = {
+    username: "Aniket",
+    price:199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+handleObject({
+    username: "Aniket",
+    price:199
+})
+
+const myArray = [200,32,45,234,45]
+
+function returnSecondValue(getarr){
+    return getarr[2];
+}
+
+console.log(returnSecondValue(myArray))
+
+console.log(returnSecondValue([200,32,45,234,45]))
