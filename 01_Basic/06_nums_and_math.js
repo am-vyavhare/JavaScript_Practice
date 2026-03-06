@@ -30,6 +30,7 @@ console.log(Math.ceil(4.3))
 console.log(Math.min(4,3,6,8))
 console.log(Math.max(4,3,6,8))
 
+//random gives the value between the <=0 and strictly less than 1
 console.log(Math.random())
 console.log(Math.random()*10)
 console.log(Math.random()*100)
@@ -38,5 +39,5 @@ console.log((Math.random()*10) + 1)
 
 const min = 10
 const max = 20
-
+//to get the value between the given range 
 console.log(Math.floor(Math.random() * (max - min + 1))+min)
